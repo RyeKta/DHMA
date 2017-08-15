@@ -1,0 +1,490 @@
+@media only screen and (min-width: 360px) {
+   .tab{
+      .tabset{
+         li{
+            &+li{
+               margin-left: 1.5625em;
+            }
+         }
+      }
+   }
+}
+@media only screen and(min-width: 480px){
+   .initiative{
+      .desc{
+         padding-left: 1.5625em;
+         overflow: hidden;
+      }
+   }
+   .ib-col{
+      .col{
+         margin: 0 -2px;
+         width: 50%;
+      }
+   }
+
+}
+@media only screen and (min-width: 640px){
+  .banner{
+    .txt-holder{
+      p{
+        @include font(1.9375em, 1.322, 300);
+     }
+  }
+}
+.who-we-are{
+   h1{
+      font-size: 1.9375em;
+   }
+}
+.initiatives-list{
+   h2{
+      font-size: 2.618em;
+   }
+}
+   .col-sm{
+      width: 50%;
+      float: left;
+   }
+   .footer-row{
+      .footer-column{
+         width: 50%;
+         &.subscribe-block,
+         &.links{
+            width: 100%;
+         }
+      }
+   }
+   .team-block{
+      .team{
+         .close{
+            background-color: transparent;
+            font-size: 1.5625em;
+            line-height: 1;
+            height: auto;
+            width: auto;
+            right: 13px;
+            top: 13px;
+         }
+      }
+      .img-holder{
+         margin: 0 1.5625em 0 0;
+         width: 175px;
+         float: left;
+         a{
+            max-width: none;
+            width: 100%;
+         }
+      }
+      .staff-desc{
+         .name{
+            text-align: left;
+         }
+         .designation{
+            @extend .name;
+         }
+      }
+   }
+   .visual-content{
+      .initiatives &{
+         width: 35.288em;
+      }
+   }
+   .initiatives{
+      .top-content{
+         h1{
+            @include font(3.5em, 0.903, 600);
+         }
+      }
+   }
+   .initiatives-section{
+      .initiative{
+         .image-holder{
+           height: 15.625em;
+           width: 15.625em;
+           float: left;
+         }
+         .desc{
+            padding-left: 3.125em;
+         }
+      }
+   }
+   .social-links{
+      li{
+         width: 50%;
+      }
+   }
+   .contact-form{
+      input[type="submit"]{
+         width: auto;
+      }
+   }
+   .blog{
+      .visual-content{
+         .visual-text{
+            p{
+               @include font(2.5625em, 1.634, 300);
+               letter-spacing: 2px;
+            }
+         }
+      }
+   }
+}
+@media only screen and (min-width: 768px){
+   .container{
+      width: 750px;
+   }
+   #header{
+      .logo{
+         margin-top: 13px;
+         width: 50px;
+         float: left;
+      }
+   }
+   .main-nav{
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      pointer-events: auto;
+      position: static;
+      overflow: visible;
+      opacity: 1;
+      #nav{
+         -webkit-transform: none;
+         transform: none;
+      }
+      .nav-active &{
+         #nav{
+            -webkit-transform: none;
+            transform: none;
+         }
+      }
+   }
+   .navbar{
+      padding: 0;
+      #nav{
+         padding: 2.416em 1.33em;
+         float: right;
+         >li{
+            border-bottom: none;
+            padding: 0;
+            float: left;
+            &+li{
+               margin-left: 45px;
+            }
+         }
+         .dropdown-menu{
+            -webkit-box-shadow: 0 13px 10px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 0 13px 10px 0 rgba(0, 0, 0, 0.1);
+            border-top: 1px solid $light-gray;
+            position: absolute;
+            text-align: right;
+            margin-top: 0;
+            z-index: 1000;
+            top: 100%;
+            right: 0;
+            left: 0;
+            .sub-menu{
+               >li{
+                  vertical-align: middle;
+                  display: inline-block;
+                  &+li{
+                     margin-left: 20px;
+                  }
+               }
+            }
+         }
+      }
+   }
+   .menu-opener{
+      display: none;
+   }
+   .banner{
+      .mask{
+         height: 35.228em;
+      }
+      .txt-holder{
+         padding: 75px 0 250px;
+         p{
+            @include font(3.125em, 1, 300);
+         }
+      }
+      .btn-wrap{
+         @include font(1em, 1.5625);
+         max-width: 28.125em;
+         padding: 0;
+      }
+      .btn-prev,
+      .btn-next{
+         background-color: transparent;
+         span{
+            @include font(11.089em, 1);
+         }
+         &:hover{
+            background-color: transparentize($light-gray, 0.2);
+         }
+      }
+   }
+   .who-we-are{
+      padding: 3.125em 0;
+      h1{
+         @include font(3.5625em, 1, 700);
+         span{
+            @include font(0.2807em, 1.5625, 400);
+         }
+      }
+   }
+   .initiative{
+      width: 33.33%;
+      .image-holder{
+         float: none;
+      }
+      h3{
+         text-align: left;
+      }
+   }
+   .more{
+      display: inline-block;
+   }
+   .blog-item{
+      &.large{
+         .overlay-content{
+            padding: 0 1.5625em 1.5625em;
+            .blog-title{
+               font-size:1.9375em;
+            }
+            .meta{
+               font-size: 0.75em;
+               line-height: 1.334;
+            }
+         }
+      }
+   }
+   .ib-col{
+      .col{
+         width: 33.33%;
+      }
+   }
+   #footer{
+      .subscribe-block{
+         form{
+            label{
+               margin-right: 1.5625em;
+               display: inline-block;
+               margin-bottom: 0;
+            }
+            .input-box{
+               margin-right: 2.083em;
+               width: 29em;
+            }
+            input[type="submit"]{
+               width: auto;
+            }
+         }
+      }
+   }
+   .footer-row{
+      .footer-column{
+         width: 33.33%;
+         &.subscribe-block,
+         &.links{
+            width: 33.33%;
+         }
+      }
+   }
+   .nav{
+      text-align: left;
+      li{
+         display: block;
+         &+li{
+            margin-left: 0;
+         }
+      }
+   }
+   .visual-content{
+      padding: 5.625em 2.875em;
+      height: 29em;
+      width: 29em;
+      span{
+         &.ethos{
+            @include font(1.5625em, 1, 300);
+         }
+         &.main-value{
+            @include font(4.1875em, 1.149, 700);
+         }
+         &.sub-value{
+            padding-left: 0.806em;
+            font-size: 1.9375em;
+         }
+      }
+      .our-team &{
+         width: auto;
+         span{
+            &.main-value{
+               @include font(4.1875em, 1.149, 700);
+               text-align: center;
+            }
+            &.sub-value{
+               text-transform: none;
+               text-align: center;
+               letter-spacing: 0;
+               padding-left: 0;
+               font-weight: 500;
+            }
+         }
+      }
+   }
+   .side-nav{
+      p{
+         display: none;
+      }
+      .js-slide-hidden {
+        display: block !important;
+        position: static !important;
+     }
+ }
+   #sidebar{
+      margin: 0 3.125em 0 0;
+      float: left;
+      width: 287px;
+   }
+   .tab{
+      .tabset{
+         text-align: left;
+      }
+   }
+   .initiatives-section{
+      padding: 4.6875em 0;
+   }
+   .contact-block{
+      padding-bottom: 4.6875em;
+      p{
+         line-height: 1.5625;
+         font-size: 1em;
+      }
+   }
+   .contact-form{
+      float: left;
+      width: 58.2%;
+   }
+   .subscribe-form{
+      float: none;
+      width: 100%;
+   }
+   .contact-info{
+      float: right;
+      width: 41.8%;
+      padding: 1.625em 0 0 4.6875em;
+      .list{
+         li{
+            overflow: hidden;
+            margin: 0 0 3.125em;
+         }
+      }
+   }
+   .more-contact{
+      padding-bottom: 4.0625em;
+      h2{
+         font-size: 2.618em;
+      }
+   }
+   .social-links{
+      li{
+         padding-bottom: 3.125em;
+         width: 33.33%;
+      }
+      .icon{
+         @include font(2.5625em, 1.585);
+         width: 1.829em;
+         height: 1.829em;
+         &.icon-youtube{
+             line-height: 1.857em;
+             font-size: 2.1875em;
+             height: 2.142em;
+             width: 2.142em;
+         }
+      }
+   }
+   .post{
+      text-align: left;
+      .col1{
+         width: 26.66%;
+         float: left;
+      }
+      .col2{
+         padding-left: 4.6875em;
+         overflow: hidden;
+      }
+      .img-holder{
+         a{
+            width: auto;
+            height: auto;
+         }
+      }
+      .entry-title{
+         text-align: left;
+      }
+      .meta{
+         text-align: left;
+         .date{
+            display: inline-block;
+         }
+      }
+   }
+   .blog{
+      #sidebar{
+         width: 21.75em;
+         float: right;
+         padding: 1em;
+      }
+   }
+   .banner-image{
+      &:after{
+         min-height: 29em;
+      }
+      .entry-title{
+         padding-right: 1.5625em;
+         padding-left: 1.5625em;
+         font-size: 2.5625em;
+      }
+   }
+}
+@media only screen and (max-width: 768px){
+   .dtable-xs{
+      table-layout: fixed;
+      display: table;
+      width: 100%;
+      > .dthead-xs{
+         display: table-header-group;
+         width: 100%;
+         height: 1%;
+
+      }
+   }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+   .hidden{
+      display: none;
+   }
+}
+@media only screen and (min-width: 992px){
+   .container{
+      width: 970px;
+   }
+   .col{
+      float: left;
+   }
+   .post-block{
+      .col{
+         width: 50%;
+      }
+   }
+   .about-section{
+      h2{
+         font-size: 4.1875em;
+      }
+   }
+   .tel-link{
+      pointer-events: none;
+      cursor: default;
+   }
+}
